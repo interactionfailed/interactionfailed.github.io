@@ -83,6 +83,13 @@ h1 {
   gap: 4px;
   font-weight: normal;
   color: #111;
+  font-size: 16px;
+}
+
+.verified span.check {
+  color: #4CAF50; /* groene kleur */
+  font-size: 16px; /* zelfde als tekst zodat het netjes uitlijnt */
+  line-height: 1;
 }
 
 .offline {
