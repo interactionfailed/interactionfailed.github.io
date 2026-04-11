@@ -11,9 +11,11 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  animation: pageIn 0.6s ease;
 }
 
-/* MAIN CARD (2 columns) */
+/* CARD */
 .card {
   display: flex;
   gap: 28px;
@@ -34,7 +36,7 @@ html, body {
   transform: translateY(-4px);
 }
 
-/* PHOTO LEFT */
+/* PHOTO */
 .photo {
   width: 190px;
   height: 190px;
@@ -44,20 +46,18 @@ html, body {
   filter: grayscale(100%) contrast(1.1);
 }
 
-/* RIGHT SIDE */
+/* INFO */
 .info {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
-/* NAME */
+/* TEXT */
 h1 {
   margin: 0;
   font-size: 34px;
 }
 
-/* VERIFIED */
 .verified {
   margin: 6px 0;
   font-size: 14px;
@@ -83,7 +83,6 @@ h1 {
   display: inline-block;
 }
 
-/* GRAY OFFLINE DOT */
 .offline {
   background: #9aa0a6;
   box-shadow: 0 0 10px rgba(154,160,166,0.4);
@@ -95,9 +94,22 @@ h1 {
   text-decoration: none;
   color: #6b7c93;
 
-  transition: color 0.2s ease;
+  transition: 0.2s ease;
 }
 
 .link:hover {
   color: #111;
+  transform: translateX(3px);
+}
+
+/* PAGE ANIMATION */
+@keyframes pageIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
