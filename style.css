@@ -111,11 +111,11 @@ h1 {
   transform: translateX(-3px);
 }
 
-/* Voeg dezelfde stijl toe voor de "contact" link 
+/* Voeg dezelfde stijl toe voor de "contact" link */
 .link {
   position: fixed;
-  top: 20px; /* Zorg dat het bovenaan komt 
-  right: 100px; /* Plaats de "contact" iets links van de "back" link 
+  top: 20px; /* Zorg dat het bovenaan komt */
+  right: 100px; /* Plaats de "contact" iets links van de "back" link */
   font-size: 14px;
   color: #6b7c93;
   text-decoration: none;
@@ -126,7 +126,7 @@ h1 {
 .link:hover {
   color: #111;
   transform: translateX(-3px);
-}*/
+}
 
 /* LINK 
 .link {
