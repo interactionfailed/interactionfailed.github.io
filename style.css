@@ -15,6 +15,16 @@ html, body {
   animation: pageIn 0.6s ease;
 }
 
+/* PHOTO */
+.photo {
+  width: 190px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 14px;
+
+  filter: grayscale(100%) contrast(1.1);
+}
+
 /* CARD */
 .card {
   display: flex;
@@ -34,16 +44,6 @@ html, body {
 
 .card:hover {
   transform: translateY(-4px);
-}
-
-/* PHOTO */
-.photo {
-  width: 190px;
-  height: 190px;
-  object-fit: cover;
-  border-radius: 14px;
-
-  filter: grayscale(100%) contrast(1.1);
 }
 
 /* INFO */
