@@ -95,7 +95,40 @@ h1 {
   100% { transform: scale(1); opacity: 0.8; }
 }
 
-/* LINK */
+.contact {
+  position: fixed;
+  top: 20px;
+  right: 25px;
+  font-size: 14px;
+  color: #6b7c93;
+  text-decoration: none;
+
+  transition: 0.2s ease;
+}
+
+.contact:hover {
+  color: #111;
+  transform: translateX(-3px);
+}
+
+/* Voeg dezelfde stijl toe voor de "contact" link */
+.link {
+  position: fixed;
+  top: 20px; /* Zorg dat het bovenaan komt */
+  right: 100px; /* Plaats de "contact" iets links van de "back" link */
+  font-size: 14px;
+  color: #6b7c93;
+  text-decoration: none;
+
+  transition: 0.2s ease;
+}
+
+.link:hover {
+  color: #111;
+  transform: translateX(-3px);
+}
+
+/* LINK 
 .link {
   font-size: 14px;
   text-decoration: none;
@@ -107,7 +140,7 @@ h1 {
 .link:hover {
   color: #111;
   transform: translateX(3px);
-}
+}*/
 
 /* PAGE ANIMATION */
 @keyframes pageIn {
