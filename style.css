@@ -95,11 +95,13 @@ h1 {
 
 /* LINK (CONTACT) */
 .link {
-  font-size: 14px;
-  text-decoration: none;
-  color: #6b7c93;
+  position: fixed;
+  top: 20px;
+  right: 25px;
 
-  transition: color 0.2s ease;
+  font-size: 14px;
+  color: #6b7c93;
+  text-decoration: none;
 }
 
 .link:hover {
