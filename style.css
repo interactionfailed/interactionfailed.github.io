@@ -181,6 +181,22 @@ h1 {
   }
 }
 
+.link {
+  position: fixed;
+  top: 20px;  /* Zet hem 20px van boven */
+  right: 25px;  /* Zet hem 25px van de rechterkant */
+  font-size: 14px;
+  color: #6b7c93;
+  text-decoration: none;
+
+  transition: 0.2s ease;
+}
+
+.link:hover {
+  color: #111;
+  transform: translateX(-3px);
+}
+
 /*@media (max-width: 768px) {
   .dot {
     width: 16px;
