@@ -62,12 +62,21 @@ h1 {
   font-size: 16px;
 }
 
-/* Verified zwart */
+/* Verified */
 .verified {
-  display: block;
+  display: inline-flex;          /* flex voor verticale centrering */
+  align-items: center;           /* midden uitlijnen */
+  gap: 4px;                      /* ruimte tussen vinkje en tekst */
   color: #111;
-  font-weight: normal;
-  margin-bottom: 2px;
+  font-weight: normal;              /* iets strakker dan normal */
+  font-size: 16px;               /* of 0.9em voor mobiel */
+}
+
+.verified::before {
+  content: "✔";                  /* het vinkje */
+  color: #4CAF50;                /* groene kleur */
+  font-weight: bold;
+  font-size: 1em;
 }
 
 /* Offline regel */
