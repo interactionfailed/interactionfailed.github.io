@@ -58,6 +58,17 @@ h1 {
   font-size: 34px;
 }
 
+.verified-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 600;
+}
+
+.verified-badge svg {
+  width: 16px;
+  height: 16px;
+}
 .verified {
   margin: 6px 0;
   font-size: 16px;
