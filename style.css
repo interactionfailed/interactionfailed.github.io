@@ -81,14 +81,10 @@ h1 {
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  font-weight: 500;
+  font-weight: normal;
   color: #111;
 }
-.verified::before {
-  content: "✔";
-  color: #4CAF50;
-  font-weight: bold;
-}
+
 .offline {
   display: flex;
   align-items: center;
