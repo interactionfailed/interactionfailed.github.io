@@ -26,7 +26,7 @@ html, body {
 /* page container */
 .page-container {
   display: flex;
-  flex-direction: row; /* desktop: naast elkaar */
+  flex-direction: row;
   gap: 28px;
   align-items: center;
   justify-content: center;
@@ -39,13 +39,12 @@ html, body {
   height: 260px;
   object-fit: cover;
   border-radius: 14px;
-  /*filter: grayscale(100%) contrast(1.1);*/
-  margin-bottom: 0;
 }
 
 /* card */
 .card {
   display: flex;
+  flex-direction: column;
   gap: 28px;
   align-items: center;
   padding: 50px;
@@ -63,6 +62,7 @@ html, body {
 .info {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 /* tekst */
@@ -70,26 +70,25 @@ h1 {
   margin: 0;
   font-size: 42px;
 }
+
 .status {
   font-size: 18px;
 }
 
-/* verified en offline */
+/* verified */
 .verified {
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  font-weight: normal;
   color: #111;
   font-size: 18px;
 }
 
-.verified span.check {
-  color: #4CAF50 !important;
-  font-size: 18px; /* zelfde als tekst zodat het netjes uitlijnt */
-  line-height: 1;
+.check {
+  color: #4CAF50;
 }
 
+/* offline */
 .offline {
   display: flex;
   align-items: center;
@@ -97,6 +96,7 @@ h1 {
   color: #9ca3af;
   font-size: 18px;
 }
+
 .dot {
   width: 9px;
   height: 9px;
@@ -104,6 +104,7 @@ h1 {
   border-radius: 50%;
   position: relative;
 }
+
 .dot::after {
   content: "";
   position: absolute;
@@ -113,13 +114,14 @@ h1 {
   opacity: 0.6;
   animation: pulse 1.5s infinite;
 }
+
 @keyframes pulse {
   0% { transform: scale(1); opacity: 0.6; }
   70% { transform: scale(2); opacity: 0; }
   100% { opacity: 0; }
 }
 
-/* mobiel: foto boven card */
+/* mobiel */
 @media (max-width: 768px) {
   .page-container {
     flex-direction: column;
@@ -127,24 +129,17 @@ h1 {
   }
 
   .photo {
-    order: 1;
     width: 210px;
     height: 210px;
-    margin-bottom: 16px;
   }
 
   .card {
-    order: 2;
     width: 92%;
     max-width: 320px;
     padding: 24px;
     flex-direction: column;
-    gap: 20px;
     align-items: center;
-  }
-
-  .info {
-    text-align: center;
+    gap: 20px;
   }
 
   h1 {
