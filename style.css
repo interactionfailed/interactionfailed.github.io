@@ -99,8 +99,8 @@ h1 {
   justify-content: center;
   width: 16px;
   height: 16px;
-  background: #1DA1F2 !important;
-  color: white;
+  background: #1DA1F2:
+  color: white !important;
   border-radius: 50%;
   font-size: 12px;
 }
