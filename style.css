@@ -100,16 +100,12 @@ h1 {
   width: 16px;
   height: 16px;
   background: #1DA1F2;
-  color: #fff;
   border-radius: 50%;
-  font-size: 12px;
-  line-height: 1;
   flex-shrink: 0;
-  -webkit-text-fill-color: white;
 }
 
 .check svg {
-  fill: white;
+  display: block; 
 }
 
 /* offline */
